@@ -6,10 +6,12 @@ bash script that searches text in all pdfs inside a folder
 
 Step by step guide:
 - Download the script
+
 if you do not have root permissions:
 - `cd <script-folder-path>`
 - first time only: `sudo chmod u+x findInPdf`
 - `./findInPdf <folderPath> <stringToSearch>`
+
 if you have root permissions, install it in the `/usr/bin` folder:
 - `cd <script-folder-path>`
 - `sudo mv findInPdf /usr/bin/findInPdf`
