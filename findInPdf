@@ -1,0 +1,17 @@
+#!/bin/bash
+#findInPdf [folder] searchString
+
+if [ $# -eq 1 ]
+then
+	folder="./";
+	searchString=$1;
+else
+	folder=$1;
+	searchString=$2;
+fi
+
+echo $folder;
+echo $searchString;
+
+str="pdftotext \"{}\" - | grep --with-filename --label=\"{}\" --color ${searchString}";
+find ${folder} -name '*.pdf' -exec sh -c "${str}" \;
