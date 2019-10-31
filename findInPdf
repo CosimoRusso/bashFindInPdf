@@ -13,5 +13,5 @@ fi
 echo $folder;
 echo $searchString;
 
-str="pdftotext \"{}\" - | grep --with-filename --label=\"{}\" --color ${searchString}";
+str="pdftotext \"{}\" - | grep -i --with-filename --label=\"{}\" --color \"${searchString}\"";
 find ${folder} -name '*.pdf' -exec sh -c "${str}" \;
