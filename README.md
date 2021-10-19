@@ -9,7 +9,7 @@ Step by step guide:
 
 if you do not have root permissions:
 - `cd <script-folder-path>`
-- first time only: `sudo chmod u+x findInPdf`
+- first time only: `chmod u+x findInPdf`
 - `./findInPdf <folderPath> <stringToSearch>`
 
 if you have root permissions, install it in the `/usr/bin` folder:
